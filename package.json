@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "node_modules/mocha/bin/mocha --timeout 10000 --exit"
+    "test": "node_modules/mocha/bin/mocha --timeout 10000 --exit",
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "bootstrap": "4.0.0",
@@ -23,16 +25,27 @@
     "pg-hstore": "^2.3.2",
     "popper.js": "1.14.0",
     "pug": "2.0.0-beta11",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "sequelize": "^4.33.4",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
-    "@babel/core": "7.1.6",
-    "@babel/preset-env": "7.1.6",
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@babel/preset-typescript": "^7.10.1",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
     "babel-loader": "8.0.4",
+    "core-js": "3",
+    "eslint": "^7.1.0",
+    "eslint-loader": "^4.0.2",
     "mocha": "^4.0.1",
     "passport-stub": "^1.1.1",
     "supertest": "^3.1.0",
+    "typescript": "^3.9.3",
     "webpack": "4.26.1",
     "webpack-cli": "3.1.2"
   },
