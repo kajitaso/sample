@@ -6,7 +6,7 @@ const moment = require('moment-timezone');
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
-  const title = '予定調整くん';
+  const title = 'フロントエンド練習';
   if (req.user) {
     Schedule.findAll({
       where: {
