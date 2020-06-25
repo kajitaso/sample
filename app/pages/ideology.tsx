@@ -4,7 +4,7 @@ import React, { useState, useCallback } from 'react';
 import JumboTron from '../components/JumboTron';
 import NavBar from '../components/NavBar';
 
-const News: React.FC = () => {
+const Ideology: React.FC = () => {
     const [ count, setCount ] = useState<number>(0)
   
     const handleIncrement = useCallback(() => {
@@ -18,20 +18,16 @@ const News: React.FC = () => {
     return (
       <div className="App">
         <NavBar />
-        <JumboTron title="お知らせの編集" lead="このページはお知らせです" />
+        <JumboTron title="弊社の企業理念について" lead="このページは企業理念です" />
         <div className="container">
-            <div>
-                <h2>お知らせ一覧</h2>
-            </div>
-            <div>
-                <h2>お知らせ登録</h2>
-            </div>
-            <div>
-                <h2>お知らせ削除</h2>
-            </div>
+          <div>{ count }</div>
+          <div>
+            <button onClick={ handleIncrement }> +1 </button>
+            <button onClick={ handleDecrement }> -1 </button>
+          </div>
         </div>
       </div>
     )
 }
 
-export default News
+export default Ideology

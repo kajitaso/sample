@@ -2,7 +2,10 @@ import React from 'react';
 
 //変更予定のないものは定数にする
 const items = [
-    { num: 1, link: "/", itemname: "ニュース"},
+    { num: 1, link: "/news", itemname: "ニュース"},
+    { num: 2, link: "/ideology", itemname: "企業理念"},
+    { num: 3, link: "/company", itemname: "会社概要"},
+    { num: 4, link: "/infomation", itemname: "各種情報"},
   ]
 const sitename = "フロント練習部屋";
 

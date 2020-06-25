@@ -80,6 +80,10 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use('/', indexRouter);
+app.use('/news', indexRouter);
+app.use('/company', indexRouter);
+app.use('/ideology', indexRouter);
+app.use('/infomation', indexRouter);
 app.use('/login', loginRouter);
 app.use('/logout', logoutRouter);
 app.use('/schedules', schedulesRouter);

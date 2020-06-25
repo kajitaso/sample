@@ -1,41 +1,32 @@
 'use strict';
 import React, { useState, useCallback } from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Router, Route, Switch ,Link} from 'react-router-dom';
+import Index from './pages/index';
+import News from './pages/news';
+import Company from './pages/company';
+import Ideology from './pages/ideology';
+import Infomation from './pages/infomation';
 
-//外部コンポーネント読み込み
-import JumboTron from './components/JumboTron';
-import NavBar from './components/NavBar';
-
-
-
-const App: React.FC = () => {
-  const [ count, setCount ] = useState<number>(0)
-
-  const handleIncrement = useCallback(() => {
-    setCount(prev => prev + 1)
-  }, []);
-
-  const handleDecrement = useCallback(() => {
-    setCount(prev => prev - 1)
-  }, []);
-
+const RouteApp: React.FC = () => {
   return (
-    <div className="App">
-      <NavBar />
-      <JumboTron title="React,Redux,Typescript練習" lead="このページはトップページです" />
-      <div className="container">
-        <div>{ count }</div>
-        <div>
-          <button onClick={ handleIncrement }> +1 </button>
-          <button onClick={ handleDecrement }> -1 </button>
-        </div>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/"><Index/></Route>
+        <Route exact path="/news"><News /></Route>
+        <Route exact path="/company"><Company /></Route>
+        <Route exact path="/ideology"><Ideology /></Route>
+        <Route exact path="/infomation"><Infomation /></Route>
+      </Switch>
+      <Link to='/'></Link>
+    </BrowserRouter>
   )
 }
 
 const domContainer = document.querySelector('#react-route');
-ReactDOM.render(<App />, domContainer);
+ReactDOM.render(<RouteApp />, domContainer);
+
+export default RouteApp
 
 // const global = Function('return this;')();
 // global.jQuery = $;
