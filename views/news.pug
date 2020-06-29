@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  div#react-route
+  div#vue-route {{message}}
+  div#vue-route2 
+    span(v-bind:title=message) マウスオーバーするとうんたらかんたら
+  div#vue-route3
+    span(v-if="seen") 今は見える
+  div#vue-route4
+    ul
+     li(v-for="todo in todos") {{ todo.text }}
+  div#vue-route5
+    p {{message}}
+    button(v-on:click="reverseMessage") 文章を裏返す。
+  div#vue-route6
+    ol
+      todo-item(v-for="item for groceryList" v-bind:key="item.id" v-bind:todo="item")

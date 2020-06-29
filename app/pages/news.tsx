@@ -18,16 +18,10 @@ const News: React.FC = () => {
     return (
       <div className="App">
         <NavBar />
-        <JumboTron title="お知らせの編集" lead="このページはお知らせです" />
+        <JumboTron title="Vue実装ページ" lead="Vueを試行錯誤している" />
         <div className="container">
             <div>
                 <h2>お知らせ一覧</h2>
-            </div>
-            <div>
-                <h2>お知らせ登録</h2>
-            </div>
-            <div>
-                <h2>お知らせ削除</h2>
             </div>
         </div>
       </div>
