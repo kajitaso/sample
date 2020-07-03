@@ -5,7 +5,6 @@ type Props = {
     children: React.ReactNode
   }
 
-//子コンポ
 const List: React.FC<Props> = ({ number, children }) => {
     return (
     <p>{ number } の { children }</p>

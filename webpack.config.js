@@ -41,7 +41,13 @@ module.exports = {
                   corejs: 3,
                 },
               ],
-              '@babel/preset-typescript',
+              [
+                '@babel/preset-typescript',
+                {
+                  allowNamespaces: true
+                }
+              ]
+
             ],
           }
         }
