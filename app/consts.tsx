@@ -3,19 +3,22 @@ export namespace TextConsts {
     export const ARTICLE_ABOUT = {
         title : "about",
         text: "このサイトはwebエンジニアのkajitasoのportfolioサイトです。gitHubも合わせてご覧ください。",
-        bgColor: "#eeeeee"
+        bgColor: "#eeeeee",
+        fadeIn: false
     }
 
     export const ARTICLE_PROFILE = {
         title : "profile",
         text: "プロフィール",
-        bgColor: "#dddddd"
+        bgColor: "#dddddd",
+        fadeIn: false
     }
 
     export const ARTICLE_FRONTEND = {
         title : "frontend skill",
         text: "フロントエンドの経験",
         bgColor: "#eeeeee",
+        fadeIn: true,
         chartData: [
             { rank: 'bootstrap', value: 80 },
             { rank: 'JQuery', value: 80 },
@@ -29,6 +32,7 @@ export namespace TextConsts {
         title : "backend skill",
         text: "バックエンドの経験",
         bgColor: "#dddddd",
+        fadeIn: true,
         chartData: [
             { rank: 'Larabel(PHP)', value: 80 },
             { rank: 'express(Node.js)', value: 40 },
@@ -41,6 +45,7 @@ export namespace TextConsts {
         title : "other skill",
         text: "その他の経験",
         bgColor: "#eeeeee",
+        fadeIn: true,
         chartData: [
             { rank: 'Redmine', value: 40 },
             { rank: 'backlog', value: 60 },
