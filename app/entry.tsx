@@ -3,7 +3,7 @@ import React, { useState, useCallback } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Router, Route, Switch ,Link} from 'react-router-dom';
 import Index from './pages/index';
-import News from './pages/news';
+import Question from './pages/question';
 import Company from './pages/company';
 import Ideology from './pages/ideology';
 import Infomation from './pages/infomation';
@@ -13,7 +13,7 @@ const RouteApp: React.FC = () => {
     <BrowserRouter>
       <Switch>
         <Route exact path="/"><Index /></Route>
-        <Route exact path="/news"><News /></Route>
+        <Route exact path="/question"><Question /></Route>
         <Route exact path="/company"><Company /></Route>
         <Route exact path="/ideology"><Ideology /></Route>
         <Route exact path="/infomation"><Infomation /></Route>

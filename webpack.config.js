@@ -11,7 +11,7 @@ module.exports = {
   context: __dirname + '/app',
   mode: 'development',
   entry: {
-    entry: './entry.tsx', 
+    entry: './entry.tsx',
     app: './app.js'
   },
   output: {
@@ -66,6 +66,31 @@ module.exports = {
             "@babel/preset-env"
           ]
         }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'vue-style-loader',
+          },
+          {
+            loader: 'css-loader',
+          }
+        ]
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'vue-style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'sass-loader',
+          },
+        ]
       },
       {
         test: /\.pug$/,

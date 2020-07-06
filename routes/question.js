@@ -5,7 +5,7 @@ const authenticationEnsurer = require('./authentication-ensurer');
 const Comment = require('../models/comment');
 
 router.get('/', (req, res, next) => {
-      res.render('news', { });
+      res.render('question', { });
   });
 
 // router.post('/:scheduleId/users/:userId/comments', authenticationEnsurer, (req, res, next) => {
