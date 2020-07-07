@@ -26,9 +26,22 @@ export default {
   },
   methods: {
       clickQuestion (event) {
+        const targetElement = event.target;
         const clickElement = event.target.parentNode;
-        console.log(clickElement)
-        clickElement.classList.toggle('is-active');
+        const contentElement = clickElement.lastChild;
+        const contentElementChild = contentElement.lastChild;
+        const targetStyle = window.getComputedStyle(targetElement)
+        const clickStyle = window.getComputedStyle(clickElement)
+        const contentStyle = window.getComputedStyle(contentElement)
+        const contentChildStyle = window.getComputedStyle(contentElementChild)
+        const contentHeight = contentChildStyle.getPropertyValue("height");
+        if(clickElement.classList.contains('is-active') === true) {
+          clickElement.classList.toggle('is-active');
+          contentElement.style.height = "0px";
+        } else {
+          clickElement.classList.toggle('is-active');
+          contentElement.style.height = contentHeight;
+        }
       }
   }
 };
@@ -47,6 +60,9 @@ export default {
     border: 2px solid rgb(114, 183, 230);
     overflow: hidden;
   }
+  @media (max-width: 812px) {
+  border-radius: 0px;
+  }
   background-color: #dbedf6;
   border-radius: 20px;
 }
@@ -55,6 +71,7 @@ export default {
   &--item {
     //アコーディオンを開いている時
     &.is-active {
+      padding-bottom: 20px;
       .accordion--content__wrap {
         visibility: visible;
         height: fit-content;
@@ -70,7 +87,7 @@ export default {
       }
     }
     &__label {
-      @media (min-width: 768px) {
+      @media (min-width: 812px) {
         padding: 30px 60px 30px 80px;
         font-size: 1.3rem;
         &::before {
@@ -83,7 +100,7 @@ export default {
           top:  25px;
       }
       }
-      @media (max-width: 768px) {
+      @media (max-width: 812px) {
         padding: 10px 30px 15px 40px;
         &::before {
           content: "Q.";
@@ -110,24 +127,23 @@ export default {
 
   &--content__wrap {
     opacity: 0;
-    transition: all 0.9s ease-out;
+    transition: all 0.4s ease-out;
     height: 0px;
     pointer-events: none;
-    @media (max-width: 768px) {
+    @media (max-width: 812px) {
       padding-bottom: 10px;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 812px) {
       padding-bottom: 0px;
     }
     visibility: hidden;
   }
   &--content {
-    height: 0px;
     position: relative;
     word-break: break-word;
     line-height: 2;
     font-weight: normal;
-      @media (min-width: 768px) {
+      @media (min-width: 812px) {
         padding: 0px 60px 0px 80px;
         font-size: 1.3rem;
         &::before {
@@ -140,7 +156,7 @@ export default {
           top: -3px;
       }
       }
-      @media (max-width: 768px) {
+      @media (max-width: 812px) {
         padding: 0px 30px 0px 40px;
         &::before {
           content: "A.";
@@ -161,6 +177,7 @@ export default {
   right: 20px;
   display: block;
   align-items: center;
+  pointer-events: none;
   @media (min-width: 768px) {
     top: 38px;
   }

@@ -1,3 +1,11 @@
+@charset "utf-8";
+
+@media (max-width: 812px) {
+html {
+    font-size: 12px;
+}
+}
+
 .fadein {
     opacity: 0;
     transform : translate(0, 50px);
