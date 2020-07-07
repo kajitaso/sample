@@ -11,7 +11,7 @@ module.exports = {
   context: __dirname + '/app',
   mode: 'development',
   entry: {
-    entry: './entry.tsx',
+    entry: './index.tsx',
     app: './app.js'
   },
   output: {

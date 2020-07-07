@@ -4,7 +4,7 @@ import React from 'react';
 const items = [
     { num: 0, link: "/", itemname: "トップ"},
     { num: 1, link: "/question", itemname: "Q&A"},
-    { num: 2, link: "/ideology", itemname: "未実装"},
+    { num: 2, link: "/ideology", itemname: "Redux"},
     { num: 3, link: "/company", itemname: "未実装"},
     { num: 4, link: "/infomation", itemname: "未実装"},
   ]

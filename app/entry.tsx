@@ -23,9 +23,6 @@ const RouteApp: React.FC = () => {
   )
 }
 
-const domContainer = document.querySelector('#react-route');
-ReactDOM.render(<RouteApp />, domContainer);
-
 export default RouteApp
 
 // const global = Function('return this;')();
