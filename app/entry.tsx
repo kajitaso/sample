@@ -5,7 +5,7 @@ import { BrowserRouter, Router, Route, Switch ,Link} from 'react-router-dom';
 import Index from './pages/index';
 import Question from './pages/question';
 import Company from './pages/company';
-import Ideology from './pages/ideology';
+import Careers from './pages/careers';
 import Infomation from './pages/infomation';
 
 const RouteApp: React.FC = () => {
@@ -15,7 +15,7 @@ const RouteApp: React.FC = () => {
         <Route exact path="/"><Index /></Route>
         <Route exact path="/question"><Question /></Route>
         <Route exact path="/company"><Company /></Route>
-        <Route exact path="/ideology"><Ideology /></Route>
+        <Route exact path="/careers"><Careers /></Route>
         <Route exact path="/infomation"><Infomation /></Route>
       </Switch>
       <Link to='/'></Link>

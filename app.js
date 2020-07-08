@@ -82,7 +82,7 @@ app.use(passport.session());
 app.use('/', indexRouter);
 app.use('/question', questionRouter);
 app.use('/company', indexRouter);
-app.use('/ideology', indexRouter);
+app.use('/careers', indexRouter);
 app.use('/infomation', indexRouter);
 app.use('/login', loginRouter);
 app.use('/logout', logoutRouter);

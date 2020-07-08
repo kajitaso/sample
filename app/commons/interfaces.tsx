@@ -18,7 +18,15 @@ export interface ILinkProps {
     filter: string
 }
 
+export interface IPageLinkProps {
+    active: boolean;
+    page: number;
+    onClick: any;
+}
+
 export interface IState {
+    pages: number;
+    jobInfo: any;
     todos: Array<any>;
     visibilityFilter: string;
 }

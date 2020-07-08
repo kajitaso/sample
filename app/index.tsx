@@ -16,6 +16,7 @@ const store = createStore(
         process.env.NODE_ENV === 'development' && window.devToolsExtension ? window.devToolsExtension() : f => f
       )
     )
+export default store;
 
 render(
   <Provider store={store}>

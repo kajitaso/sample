@@ -18,6 +18,27 @@ export const toggleTodo = (id: number) => ({
     id
   })
 
+//page番号操作
+export const setPages = (page: number) => ({
+  type: 'SET_PAGE_NUMBER',
+  pages: page
+})
+
+export const incPages = (page: number) => ({
+  type: 'INC_PAGE_NUMBER',
+  pages: page > 0 ? page++ : page
+})
+
+export const decPages = (page: number) => ({
+  type: 'DEC_PAGE_NUMBER',
+  pages: page > 0 ? page-- : page
+})
+
+export const clearPages = () => ({
+  type: 'CREAR_PAGE_NUMBER',
+  pages: 1
+})
+
 //Todoのソート状態を定義するstateを3つ列挙
 export enum VisibilityFilters {
   SHOW_ALL = 'SHOW_ALL',
