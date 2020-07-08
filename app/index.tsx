@@ -3,7 +3,7 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore, compose } from 'redux'
 import rootReducer from './reducers'
-import Entry from './Entry'
+import Entry from './entry'
 
 interface MyWindow extends Window {  
     devToolsExtension: any  

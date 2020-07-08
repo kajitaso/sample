@@ -8,7 +8,7 @@ import Company from './pages/company';
 import Careers from './pages/careers';
 import Infomation from './pages/infomation';
 
-const RouteApp: React.FC = () => {
+const Entry: React.FC = () => {
   return (
     <BrowserRouter>
       <Switch>
@@ -23,7 +23,7 @@ const RouteApp: React.FC = () => {
   )
 }
 
-export default RouteApp
+export default Entry
 
 // const global = Function('return this;')();
 // global.jQuery = $;
