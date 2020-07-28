@@ -7,17 +7,17 @@ import { IState } from '../commons/interfaces';
 const mapStateToProps = (state: IState, ownProps: any) => {
   console.log(ownProps.page);
   console.log(state);
-  console.log('ページ一致したかどうか',ownProps.page === state.pages);
-  //現在のページと一致したときアクティブ
+  console.log('ページ一致したかどうか',state.jobInfo.length);
+  //最後のページのときfalse
   return {
-    active: ownProps.page === state.pages
+    active: ownProps.page === state.pages ? false : true
   }
 }
 
 const mapDispatchToProps = (dispatch: Dispatch, ownProps: any) => {
   console.log('ownProps dispatch:', ownProps);
   return {
-    setPageNumber: () => {
+    setLastPage: () => {
       dispatch(setPages(ownProps.page))
     }
   }

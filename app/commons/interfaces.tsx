@@ -21,7 +21,13 @@ export interface ILinkProps {
 export interface IPageLinkProps {
     active: boolean;
     page: number;
-    onClick: any;
+    setPageNumber: any;
+}
+
+export interface IPageAllowProps {
+    active: boolean;
+    page: number;
+    allowPageAction: any;
 }
 
 export interface IState {
@@ -29,4 +35,6 @@ export interface IState {
     jobInfo: any;
     todos: Array<any>;
     visibilityFilter: string;
+    jobInfoStatus: string;
+    totalPeriod: number;
 }

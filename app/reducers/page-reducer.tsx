@@ -6,7 +6,9 @@ const pages = (state = 1, action) => {
         return action.pages
     case 'DEC_PAGE_NUMBER':
         return action.pages
-    case 'CREAR_PAGE_NUMBER':
+    case 'MAX_PAGE_NUMBER':
+        return action.pages
+    case 'MIN_PAGE_NUMBER':
         return action.pages
     default:
         return state

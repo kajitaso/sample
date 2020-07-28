@@ -4,14 +4,14 @@ export namespace TextConsts {
         title : "about",
         text: "このサイトはwebエンジニアのkajitasoのportfolioサイトです。gitHubも合わせてご覧ください。",
         bgColor: "#eeeeee",
-        fadeIn: false
+        fadeIn: true
     }
 
     export const ARTICLE_PROFILE = {
         title : "profile",
         text: "プロフィール",
         bgColor: "#dddddd",
-        fadeIn: false
+        fadeIn: true
     }
 
     export const ARTICLE_SKILL = [
@@ -103,88 +103,116 @@ export namespace TextConsts {
 
     export const JOB_INFO = [
         {
-            id:1, jobName: "既存アプリ更新に伴うのAPI更新", frontEnd: "なし", backEnd: "node.js(express)", period: "4ヶ月",
+            id:1, jobName: "既存アプリ更新に伴うのAPI更新", frontEnd: "なし", backEnd: "node.js(express)", period: 4,
             database: "なし", chatTool: "chatwork", taskTool: "backlog", editor: "visualstudiocode", os: "MacOS", sorce: "Gitlub",
             development: "OracleMobile",
-            overView: "概要1"
+            detail1: "概要1",
+            detail2: "概要2",
+            detail3: "概要3"
         },
         {
-            id:2, jobName: "会計サイトの新規構築", frontEnd: "React.js", backEnd: "PHP(Larabel)", period: "7ヶ月",
+            id:2, jobName: "会計サイトの新規構築", frontEnd: "React.js", backEnd: "PHP(Larabel)", period: 7,
             database: "PostgresSQL", chatTool: "microsoftTeam", taskTool: "Redmine", editor: "PHPstorm", os: "win10", sorce: "git,tortoiseGit",
             development: "virtualBox",
-            overView: "概要2"
+            detail1: "概要1",
+            detail2: "概要2",
+            detail3: "概要3"
         },
         {
-            id:3, jobName: "既存サイトのレスポンシブ対応", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP(Zend)", period: "7ヶ月",
+            id:3, jobName: "既存サイトのレスポンシブ対応", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP(Zend)", period: 7,
             database: "Oracle", chatTool: "未参加", taskTool: "backlog", editor: "visualstudiocode", os: "win8", sorce: "git ",
             development: "WinSCPで放り込む",
-            overView: "概要3"
+            detail1: "概要1",
+            detail2: "概要2",
+            detail3: "概要3"
         },
         {
-            id:4, jobName: "印刷会社社内システム", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP(Laravel)", period: "12ヶ月",
+            id:4, jobName: "印刷会社社内システム", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP(Laravel)", period: 12,
             database: "MySQL", chatTool: "chatwork", taskTool: "google", editor: "ecripse", os: "win10", sorce: "git",
             development: "なし",
-            overView: "概要4"
+            detail1: "概要1",
+            detail2: "概要2",
+            detail3: "概要3"
         },
         {
-            id:5, jobName: "外回りの営業支援ツール", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP", period: "11ヶ月",
+            id:5, jobName: "外回りの営業支援ツール", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP", period: 11,
             database: "不明", chatTool: "なし", taskTool: "なし", editor: "visualstudiocode", os: "win10", sorce: "なし",
             development: "WinSCPで放り込む",
-            overView: "概要5"
+            detail1: "概要1",
+            detail2: "概要2",
+            detail3: "概要3"
         },
         {
-            id:6, jobName: "ダミーデータ案件", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP", period: "11ヶ月",
+            id:6, jobName: "ダミーデータ案件", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP", period: 0,
             database: "不ダミーデータ案件明", chatTool: "ダミーデータ案件", taskTool: "ダミーデータ案件", editor: "ダミーデータ案件", os: "win10", sorce: "なし",
             development: "ダミーデータ案件",
-            overView: "ダミーデータ案件概要5"
+            detail1: "概要1",
+            detail2: "概要2",
+            detail3: "概要3"
         },
         {
-            id:7, jobName: "ダミーデータ案件", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP", period: "11ヶ月",
+            id:7, jobName: "ダミーデータ案件", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP", period: 0,
             database: "不ダミーデータ案件明", chatTool: "ダミーデータ案件", taskTool: "ダミーデータ案件", editor: "ダミーデータ案件", os: "win10", sorce: "なし",
             development: "ダミーデータ案件",
-            overView: "ダミーデータ案件概要5"
+            detail1: "概要1",
+            detail2: "概要2",
+            detail3: "概要3"
         },
         {
-            id:8, jobName: "ダミーデータ案件", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP", period: "11ヶ月",
+            id:8, jobName: "ダミーデータ案件", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP", period: 0,
             database: "不ダミーデータ案件明", chatTool: "ダミーデータ案件", taskTool: "ダミーデータ案件", editor: "ダミーデータ案件", os: "win10", sorce: "なし",
             development: "ダミーデータ案件",
-            overView: "ダミーデータ案件概要5"
+            detail1: "概要1",
+            detail2: "概要2",
+            detail3: "概要3"
         },
         {
-            id:9, jobName: "ダミーデータ案件", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP", period: "11ヶ月",
+            id:9, jobName: "ダミーデータ案件", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP", period: 0,
             database: "不ダミーデータ案件明", chatTool: "ダミーデータ案件", taskTool: "ダミーデータ案件", editor: "ダミーデータ案件", os: "win10", sorce: "なし",
             development: "ダミーデータ案件",
-            overView: "ダミーデータ案件概要5"
+            detail1: "概要1",
+            detail2: "概要2",
+            detail3: "概要3"
         },
         {
-            id:10, jobName: "ダミーデータ案件", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP", period: "11ヶ月",
+            id:10, jobName: "ダミーデータ案件", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP", period: 0,
             database: "不ダミーデータ案件明", chatTool: "ダミーデータ案件", taskTool: "ダミーデータ案件", editor: "ダミーデータ案件", os: "win10", sorce: "なし",
             development: "ダミーデータ案件",
-            overView: "ダミーデータ案件概要5"
+            detail1: "概要1",
+            detail2: "概要2",
+            detail3: "概要3"
         },
         {
-            id:11, jobName: "ダミーデータ案件", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP", period: "11ヶ月",
+            id:11, jobName: "ダミーデータ案件", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP", period: 0,
             database: "不ダミーデータ案件明", chatTool: "ダミーデータ案件", taskTool: "ダミーデータ案件", editor: "ダミーデータ案件", os: "win10", sorce: "なし",
             development: "ダミーデータ案件",
-            overView: "ダミーデータ案件概要5"
+            detail1: "概要1",
+            detail2: "概要2",
+            detail3: "概要3"
         },
         {
-            id:12, jobName: "ダミーデータ案件", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP", period: "11ヶ月",
+            id:12, jobName: "ダミーデータ案件", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP", period: 0,
             database: "不ダミーデータ案件明", chatTool: "ダミーデータ案件", taskTool: "ダミーデータ案件", editor: "ダミーデータ案件", os: "win10", sorce: "なし",
             development: "ダミーデータ案件",
-            overView: "ダミーデータ案件概要5"
+            detail1: "概要1",
+            detail2: "概要2",
+            detail3: "概要3"
         },
         {
-            id:13, jobName: "ダミーデータ案件", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP", period: "11ヶ月",
+            id:13, jobName: "ダミーデータ案件", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP", period: 0,
             database: "不ダミーデータ案件明", chatTool: "ダミーデータ案件", taskTool: "ダミーデータ案件", editor: "ダミーデータ案件", os: "win10", sorce: "なし",
             development: "ダミーデータ案件",
-            overView: "ダミーデータ案件概要5"
+            detail1: "概要1",
+            detail2: "概要2",
+            detail3: "概要3"
         },
         {
-            id:14, jobName: "ダミーデータ案件", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP", period: "11ヶ月",
+            id:14, jobName: "ダミーデータ案件", frontEnd: "html/css, javascript, bootstrap, JQuery", backEnd: "PHP", period: 0,
             database: "不ダミーデータ案件明", chatTool: "ダミーデータ案件", taskTool: "ダミーデータ案件", editor: "ダミーデータ案件", os: "win10", sorce: "なし",
             development: "ダミーデータ案件",
-            overView: "ダミーデータ案件概要5"
+            detail1: "概要1",
+            detail2: "概要2",
+            detail3: "概要3"
         }
 
     ]

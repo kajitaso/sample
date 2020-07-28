@@ -34,9 +34,19 @@ export const decPages = (page: number) => ({
   pages: page > 0 ? page-- : page
 })
 
-export const clearPages = () => ({
-  type: 'CREAR_PAGE_NUMBER',
-  pages: 1
+export const maxPages = (maxPage: number) => ({
+  type: 'MAX_PAGE_NUMBER',
+  pages: maxPage
+})
+
+export const minPages = (minPage: number) => ({
+  type: 'MIN_PAGE_NUMBER',
+  pages: minPage
+})
+
+export const setJobInfoStatus = (status: string) => ({
+  type: 'SET_JOBINFO_STATUS',
+  status
 })
 
 //Todoのソート状態を定義するstateを3つ列挙
@@ -44,4 +54,9 @@ export enum VisibilityFilters {
   SHOW_ALL = 'SHOW_ALL',
   SHOW_COMPLETED = 'SHOW_COMPLETED',
   SHOW_ACTIVE = 'SHOW_ACTIVE'
+}
+//JOBINFO内の状態
+export enum JobInfoStatus {
+  MATTER = 'MATTER',
+  SKILLS = 'SKILLS',
 }

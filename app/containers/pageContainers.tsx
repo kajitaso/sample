@@ -1,5 +1,5 @@
 import  { connect }  from 'react-redux'
-import { setPages, incPages, decPages, clearPages } from '../actions/index';
+import { setPages, incPages, decPages, maxPages, minPages } from '../actions/index';
 import pageContainer from '../components/pageContainer'
 import { Dispatch } from 'redux';
 import { IState } from '../commons/interfaces';
@@ -25,8 +25,27 @@ const mapStateToProps = (state: IState, ownProps: any) => {
   }
 }
 
+const mapDispatchToProps = (dispatch: Dispatch, ownProps: any) => {
+  console.log('ownProps dispatch:', ownProps);
+  return {
+    setFirstPage: (firstpage: number) => {
+      dispatch(minPages(firstpage))
+    },
+    setLastPage: (lastPage: number) => {
+      dispatch(maxPages(lastPage))
+    },
+    setIncrementPage: (currentPage: number) => {
+      dispatch(incPages(currentPage))
+    },
+    setDecrementPage: (currentPage: number) => {
+      dispatch(decPages(currentPage))
+    }
+  }
+}
+
 const PageContainer = connect(
-  mapStateToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(pageContainer)
 
 export default PageContainer
