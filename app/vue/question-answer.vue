@@ -1,6 +1,6 @@
 <template lang="pug">
     div#question_answer
-      div.container.question.mt-5.pb-3
+      div.container.question.mt-5.pb-3.mb-5
         h2.question--title よくある質問
         div.question--box
           ul.accordion
@@ -12,6 +12,10 @@
                   div.accordion--content
                     p.accordion-content__text
                       | {{ question.answer }}
+      footer.footer
+        div.container
+          p.text-muted.text-right.pt-2.pb-5.mb-0
+            | {{ footerText }}
 </template>
 
 <script>
@@ -21,7 +25,8 @@ import { TextConsts } from "../consts"
 export default {
   data() {
     return {
-      questions: TextConsts.QUESTION_ARRAY
+      questions: TextConsts.QUESTION_ARRAY,
+      footerText: TextConsts.FOOTER_TEXT.text
     };
   },
   methods: {
@@ -48,6 +53,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+footer {
+  background-color: #ced4da;
+}
 .question {
   &--title {
     padding: 40px 30px;
