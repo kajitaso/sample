@@ -4,7 +4,7 @@ export namespace TextConsts {
         title : "about",
         text: "このサイトはwebエンジニアのkajitasoのportfolioサイトです。gitHubも合わせてご覧ください。",
         bgColor: "#eeeeee",
-        fadeIn: true
+        fadeIn: false
     }
 
     export const ARTICLE_PROFILE = {
