@@ -13,53 +13,55 @@ class jobInfoContent extends Component<any, any> {
         return (
             <div className="container" style={this.containerCSS}>
                 {this.props.status === "MATTER" &&
-                    <div>
-                        <h3 className="pt-3 pb-3 text-center">{this.props.jobInfo[this.props.page - 1].jobName}</h3>
-                        <table className="m-auto">
-                            <tbody>
-                                <tr>
-                                    <td className="font-weight-bold p-3">period(month)</td>
-                                    <td>{this.props.jobInfo[this.props.page - 1].period}</td>
-                                </tr>
-                                <tr>
-                                    <td className="font-weight-bold p-3">frontend</td>
-                                    <td>{this.props.jobInfo[this.props.page - 1].frontEnd}</td>
-                                </tr>
-                                <tr>
-                                    <td className="font-weight-bold p-3">backend</td>
-                                    <td>{this.props.jobInfo[this.props.page - 1].backEnd}</td>
-                                </tr>
+                    <div className="pt-3 pb-3">
+                        <h3 style={{ color: "blue", backgroundColor: "rgb(255,255,255,0.5)" }} className="pt-3 pb-3 text-center">{this.props.jobInfo[this.props.page - 1].jobName}</h3>
+                        <div style={{ backgroundColor: "rgb(255,255,255,0.5)" }}>
+                            <table className="m-auto">
+                                <tbody>
+                                    <tr>
+                                        <td className="font-weight-bold p-3">period(month)</td>
+                                        <td>{this.props.jobInfo[this.props.page - 1].period}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="font-weight-bold p-3">frontend</td>
+                                        <td>{this.props.jobInfo[this.props.page - 1].frontEnd}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="font-weight-bold p-3">backend</td>
+                                        <td>{this.props.jobInfo[this.props.page - 1].backEnd}</td>
+                                    </tr>
 
-                                <tr>
-                                    <td className="font-weight-bold p-3">database</td>
-                                    <td>{this.props.jobInfo[this.props.page - 1].database}</td>
-                                </tr>
-                                <tr>
-                                    <td className="font-weight-bold p-3">chat tool</td>
-                                    <td>{this.props.jobInfo[this.props.page - 1].chatTool}</td>
-                                </tr>
-                                <tr>
-                                    <td className="font-weight-bold p-3">task tool</td>
-                                    <td>{this.props.jobInfo[this.props.page - 1].taskTool}</td>
-                                </tr>
-                                <tr>
-                                    <td className="font-weight-bold p-3">editor</td>
-                                    <td>{this.props.jobInfo[this.props.page - 1].editor}</td>
-                                </tr>
-                                <tr>
-                                    <td className="font-weight-bold p-3">OS</td>
-                                    <td>{this.props.jobInfo[this.props.page - 1].os}</td>
-                                </tr>
-                                <tr>
-                                    <td className="font-weight-bold p-3">source</td>
-                                    <td>{this.props.jobInfo[this.props.page - 1].sorce}</td>
-                                </tr>
-                                <tr>
-                                    <td className="font-weight-bold p-3">development</td>
-                                    <td>{this.props.jobInfo[this.props.page - 1].development}</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                    <tr>
+                                        <td className="font-weight-bold p-3">database</td>
+                                        <td>{this.props.jobInfo[this.props.page - 1].database}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="font-weight-bold p-3">chat tool</td>
+                                        <td>{this.props.jobInfo[this.props.page - 1].chatTool}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="font-weight-bold p-3">task tool</td>
+                                        <td>{this.props.jobInfo[this.props.page - 1].taskTool}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="font-weight-bold p-3">editor</td>
+                                        <td>{this.props.jobInfo[this.props.page - 1].editor}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="font-weight-bold p-3">OS</td>
+                                        <td>{this.props.jobInfo[this.props.page - 1].os}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="font-weight-bold p-3">source</td>
+                                        <td>{this.props.jobInfo[this.props.page - 1].sorce}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="font-weight-bold p-3">development</td>
+                                        <td>{this.props.jobInfo[this.props.page - 1].development}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 }
                 {this.props.status === "SKILLS" &&
