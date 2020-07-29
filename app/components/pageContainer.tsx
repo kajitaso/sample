@@ -9,8 +9,8 @@ class pageContainer extends Component<any, any> {
     }
     private lastPage = this.props.jobInfo.length;
 
-    private styleActive: CSS.Properties = {padding: '0px 10px', width: '70px', backgroundColor: '#f5e6b9', textAlign: 'center', border: '1px solid #0d46e8'}
-    private styleDisActive: CSS.Properties= {padding: '0px 10px', width: '70px', backgroundColor: '#cbf9f5', textAlign: 'center', border: '1px solid #0d46e8', cursor: 'pointer', color: 'blue'}
+    private styleActive: CSS.Properties = {padding: '0px 10px', width: '70px', backgroundColor: '#f5e6b9', textAlign: 'center', border: '1px solid #0d46e8', lineHeight: "initial"}
+    private styleDisActive: CSS.Properties= {padding: '0px 10px', width: '70px', backgroundColor: '#cbf9f5', textAlign: 'center', border: '1px solid #0d46e8', cursor: 'pointer', color: 'blue', lineHeight: "initial"}
 
     private firstAllowStyle = this.props.pages === 1 ? this.styleDisActive : this.styleActive
     //現在のページから前後2件を表示

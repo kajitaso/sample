@@ -14,7 +14,7 @@ class JobInfoContainer extends Component<any, any> {
         const tagDisactive: CSS.Properties = {backgroundColor: "white", color:"rgb(122, 213, 222)", padding: "0.5rem", cursor: "pointer", userSelect: "none", borderRadius: "0.5rem 0.5rem 0 0"}
 
         return (
-            <div className="container" style={this.containerCSS}>
+            <div className="container mb-3 pb-3" style={this.containerCSS}>
                 <h2 className="mt-3 pt-3 text-center">職務経歴</h2>
                 <p className="text-right">エンジニア歴: {this.props.year}年 　{this.props.month}ヶ月</p>
                 <ul style={{ paddingLeft: '0', marginBottom: '0', listStyle: 'none', display: 'flex', justifyContent: 'left', alignItems: 'center', fontSize: '1rem'}}>
@@ -33,12 +33,10 @@ class JobInfoContainer extends Component<any, any> {
                             this.props.setJobStatus(JobInfoStatus.SKILLS)
                         }}
                     >
-                        スキル概要
+                        業務概要
                     </li>
                 </ul>
-                <JobInfoContent />
-                <p>{this.props.page}</p>
-                <p>{this.props.status}</p>
+                <JobInfoContent status={this.props.status} jobInfo={this.props.jobInfo} page={this.props.page}/>
             </div>
         );
     }
